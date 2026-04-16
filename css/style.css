@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+body{
+    background-image: linear-gradient(#7aa7ff,#cfe3ff);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    color: whitesmoke;
+}
+h1{
+    font-size:35px;
+   margin-bottom: 10px;
+    text-align: center;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+ul a{
+    border-bottom: 2px solid transparent;
+}
+ul a:hover{
+    border-bottom-color: whitesmoke;
+}
+main{
+    background-color: r gba(255 255 255 0.6);
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    padding: 170px;
+    border-radius: 15px;
+}
+h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0e3990;
+}
+p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #0e3990;
+}
+
+footer p{
+   text-align: center;
+    padding: 0;
+    color: whitesmoke;
+   height:90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.course-table{
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+.course-table thead{
+
+    color: whitesmoke;
+}
+.course-table th, .course-table td{
+    padding: 15px;
+    text-align: center;
+}
+.course-table tr{
+    border-bottom: 1px solid #eee;
+    transition: 0.3s;
+}
+.course-table tbody tr:hover{
+    background: #f0f6ff;
+    transform: scale(1.01);
+}
+.course-table caption{
+    padding: 10px;
+    font-size: larger;
+    font-weight:900 ;   
+    font-family: "poppins" sans-serif;
+    text-align: center;
+
+}
+
+.my-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin: auto;
+    
+
+}
+.my-form{
+    width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    color: #0e3990;
+    flex-direction: column;
+   
+}
+form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    margin: 10px 0 5px;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+button{
+    width: 150px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: whitesmoke;
+    color: #0e3990;
+    font-size: 16px;
+cursor: pointer;
+}
+button:hover{
+    background: #f0f6ff;
+
+}
+.c-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin: auto;
+     width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    color: #0e3990;
+    flex-direction: column;
+}
+@media(max-width:1050px ){
+    .container{
+        width: 95%;
+    }
+}
+@media(max-width:850px ){
+    .container{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:650px ){
+    .container{
+        flex-direction:column;
+    }
+}
+@media(max-width:450px ){
+    h1{
+        font-size: 18px;
+    }
+}
+@media(max-width:350px ){
+    h1{
+        font-size: 18px;
+    }
+}
+@media(max-width:300px ){
+   body{
+        font-size: 12px;
+    }
+}
+
