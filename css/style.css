@@ -184,6 +184,10 @@ button:hover{
 @media(max-width:450px ){
     h1{
         font-size: 22px;
+        line-hight: 1.6;
+        text-align: center;
+        width:90%;
+        margin: auto;
     }
 }
 @media(max-width:350px ){
