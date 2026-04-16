@@ -166,38 +166,127 @@ button:hover{
     color: #0e3990;
     flex-direction: column;
 }
-@media(max-width:1050px ){
-    .container{
-        width: 95%;
-    }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-@media(max-width:850px ){
-    .container{
-        flex-wrap: wrap;
-    }
+
+body{
+    background-image: linear-gradient(#7aa7ff,#cfe3ff);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-@media(max-width:650px ){
-    .container{
-        flex-direction:column;
-    }
+
+/* container */
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
-@media(max-width:450px ){
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    color: whitesmoke;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* nav */
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul a{
+    border-bottom: 2px solid transparent;
+}
+
+ul a:hover{
+    border-bottom-color: whitesmoke;
+}
+
+/* main */
+main{
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #0e3990;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0e3990;
+}
+
+/* footer */
+footer p{
+    text-align: center;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+
+@media(max-width:768px){
+
     h1{
         font-size: 22px;
-        line-hight: 1.6;
-        text-align: center;
-        width:90%;
-        margin: auto;
+    }
+
+    ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main{
+        padding: 25px 15px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 14px;
     }
 }
-@media(max-width:350px ){
+
+@media(max-width:480px){
+
     h1{
         font-size: 18px;
     }
-}
-@media(max-width:300px ){
-   body{
-        font-size: 12px;
+
+    body{
+        font-size: 14px;
     }
 }
 
